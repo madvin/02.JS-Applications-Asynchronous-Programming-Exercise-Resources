@@ -6,9 +6,6 @@ async function getInfo() {
     const stopID = document.getElementById('stopId').value;
     const url = `http://localhost:3030/jsonstore/bus/businfo/${stopID}`;
 
-    console.log(url);
-    
-
     try {
         stopNameEl.textContent = 'Loading...';
         tableEl.innerHTML = '';
