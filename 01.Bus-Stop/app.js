@@ -9,7 +9,7 @@ async function getInfo() {
     try {
         stopNameEl.textContent = 'Loading...';
         tableEl.innerHTML = '';
-        // submitBtn.disabled = 'true';
+        submitBtn.disabled = true;
 
         const res = await fetch(url);
 
@@ -27,7 +27,7 @@ async function getInfo() {
 
         });
 
-        // submitBtn.disabled = 'false';
+        submitBtn.disabled = false;
         
     } 
     catch (error) {
